@@ -32,7 +32,6 @@ public class CommonMethods extends PageInitializer{
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
         driver.manage().window().maximize();
         driver.get(ConfigReader.read("url"));
-        initializePageObjects();
     }
 
     public static void closeBrowser() {
